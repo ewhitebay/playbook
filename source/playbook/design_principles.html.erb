@@ -15,7 +15,7 @@ theme: playbook
         Below are principles that have guided the <%= link_to("CodeX HL7 FHIR Accelerator Community","https://confluence.hl7.org/display/COD/CodeX+Home") %> and in the design, development, testing, and adoption of FHIR-based data standards, including <%= link_to("mCODE","https://confluence.hl7.org/display/COD/mCODE") %>. If additional specialties follow these principles, the resulting standards are more likely to be developed efficiently, and to be interoperable and compatible across specialties as part of a life-time patient Standard Health Record.
       </p>
              
-      <ol class="section-list">
+      <ol class="principles-list col-lg-10">
         <li>Develop data standards that are <b>Open</b>, <b>Community-driven</b>, <b>Use Case-driven</b>, and with <b>adoption</b> and <b>value</b> the focus from the beginning.
           <ul>
             <li>Need broadest possible support of patients, providers, Gov’t, vendors, payers, etc.</li>
@@ -27,14 +27,14 @@ theme: playbook
 
         <li>Ensure that standardized <b>data</b> must be part of every patient's <b>standard of care</b>. 
           <ul>
-            <li>The primary focus is collection and sharing of quality, core, standardized data related to <b>patient care and outcomes</b>, with a visionary result of a coherent lifetime Standard Health Record for every patient.</li
+            <li>The primary focus is collection and sharing of quality, core, standardized data related to <b>patient care and outcomes</b>, with a visionary result of a coherent lifetime Standard Health Record for every patient.</li>
             <li>Data originally collected for one patient's health state can be important for future states.</li>
             <li>Secondary uses of patient care data (personal, research, quality measurement, payer operations, etc.) will be hugely valuable and more cost-effective than current approaches.</li>
             <li>Can also create supplemental IGs when the data requirements are not considered core, but important for smaller Communities and/or edge applications.</li>
           </ul>
         </li>
 
-        <li>Represent data in the standard as <b>discrete</b> observations and actions (e.g. patient birth date = 11/04/1989 vs. patient is 34 years old).
+        <li>Represent data in the standard as <b>discrete</b> observations and actions (e.g., patient birth date = 11/04/1989 vs. patient is 34 years old).
           <ul>
             <li>Allows aggregated calculations using different observations and actions, via different approaches, for different Use Cases, at different times.</li>
           </ul>
@@ -60,9 +60,10 @@ theme: playbook
           </ul>
         </li>
 
-        <li>Leverage <b>Government-backed interoperability standards</b> whenever possible (e.g., FHIR, USCDI represented in FHIR as US Core, USCDI+ ...).
+        <li>Leverage <b>Government-backed interoperability standards</b> whenever possible
           <ul>
-            <li>Gov’t support increases impetuous for adoption and thus provides a stronger basis for cross-specialty interoperability.</li>
+            <li>e.g., <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">United States Core Data for Interoperability (USCDI)</a>, <a href="https://hl7.org/fhir/summary.html">Fast Healthcare Interoperability Resources (FHIR)</a>, <a href="https://www.hl7.org/fhir/us/core/">US Core FHIR Implementation Guide</a>, and others. </li>
+            <li>Gov’t support increases motivation for adoption and thus provides a stronger basis for cross-specialty interoperability.</li>
             <li>May require changes to representations of previous work.</li>
           </ul>
         </li>
@@ -75,7 +76,7 @@ theme: playbook
           </ul>
         </li>
 
-        <li>Leverage <b>global code systems</b>.
+        <li>Leverage <b>global code systems and terminology standards</b>.
           <ul>
             <li>Observations and actions can be represented consistently within and across specialties, in many cases, around the world using standardized, widely used terminologies, vocabularies, and codes (e.g., LOINC, SNOMED CT, CPT, etc.).</li>
           </ul>
@@ -105,7 +106,7 @@ theme: playbook
       
     <div class="playbook-bottom-navigation">
       <div class="previous"><%= link_to("Prev: Getting Started", "getting_started.html", :class=>"btn btn-outline-primary btn-lg") %></div>
-      <div class="next"><%= link_to("Next: Building Community", "community.html", :class=>"btn btn-outline-primary btn-lg") %></div>
+      <div class="next"><%= link_to("Next: Community Building", "community.html", :class=>"btn btn-outline-primary btn-lg") %></div>
     </div>
 
     </div>

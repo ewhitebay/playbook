@@ -9,14 +9,14 @@ pages.each_with_index do |page, index|
     entry = {
       :id    => index,
       :title => page.data.pagetitle,
-      :url   => page.url,
+      :url   => page.path,
       :content => page.render({:layout => false })
         .downcase
         # Need regex to remove HTML entities such as &ldquo;
         # Need regex to replace - with ' '
         .gsub(%r{</?[^>]+?>}, '' )
-        .gsub( /<.*?>/, "" )   # get rid of tags
-        .gsub( /[^\w ]/, "" )  # get rid of not letters
+        .gsub( /<.*?>/, " " )   # get rid of tags
+        .gsub( /[^\w ]/, " " )  # get rid of not letters
         .split( /\s+/ )        # split by words
         .sort.uniq
     }
